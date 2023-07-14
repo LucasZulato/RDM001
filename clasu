@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="txt"></p>
+    <script>
+var ttt = document.getElementById('txt')
+
+function calc(){
+  var num = Math.floor(Math.random()*6)
+  
+  switch(num){
+    case 0:
+      ttt.innerHTML = ttt.innerHTML + 'l'
+      breack
+    case 1:
+      ttt.innerHTML = ttt.innerHTML + 'u'
+      breack
+    case 2:
+      ttt.innerHTML = ttt.innerHTML + 'c'
+      breack
+    case 3:
+      ttt.innerHTML = ttt.innerHTML + 'a'
+      breack
+    case 4:
+      ttt.innerHTML = ttt.innerHTML + 's'
+      breack
+    case 5:
+      ttt.innerHTML = ttt.innerHTML + ' '
+      breack
+  }
+}
+
+setInterval(calc,0)
+    </script>
+</body>
+</html>
